@@ -13,7 +13,13 @@ Thumbs.db
 *.swp
 *.swo
 
-# pixi
-pixi.lock
 
 
+
+/datasets/Angelina-YOLO/
+/datasets/DSBI-YOLO/
+/datasets/MergedDataset-Crops/
+/datasets/MergedDataset-YOLO/
+/datasets/NaturalScene-YOLO/
+/datasets/raw/
+/.pixi/
