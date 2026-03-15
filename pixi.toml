@@ -1,0 +1,46 @@
+[workspace]
+name = "OBR"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[system-requirements]
+cuda = "11.8"
+
+[dependencies]
+cuda-version = "11.8.*"
+pytorch = { version = "2.4.1.*", build = "*cuda*" }
+torchvision = { version = "*", build = "*cuda*" }
+tqdm = "*"
+albumentations = "*"
+python = "3.11.*"
+jupyterlab = "*"
+ipykernel = "*"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+opencv = "*"
+ultralytics = "*"
+evidently = "*"
+scikit-learn = ">=1.8.0,<2"
+scikit-image = ">=0.26.0,<0.27"
+fiftyone = ">=1.4.1,<2"
+strawberry-graphql = "<0.209.0"
+pyprojroot = ">=0.3.0,<0.4"
+gdown = ">=5.2.1,<6"
+
+[tasks]
+make_dataset = "python src/data/make_dataset.py"
+make_crops = "python src/data/extract_crops.py"
+make_angelina_augmented = "python src/data/augment_offline.py"
+
+# Detector
+train_detector = "python src/detector/train.py"
+val_detector = "python src/detector/validate.py"
+
+# Classifier
+train_classifier = "python src/classifier/train.py"
+val_classifier = "python src/classifier/validate.py"
+
+# Pipeline
+run_pipeline = "python src/pipeline/inference.py"

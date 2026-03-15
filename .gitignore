@@ -1,0 +1,19 @@
+# JetBrains IDEs (IntelliJ IDEA, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE backup files
+*~
+*.swp
+*.swo
+
+# pixi
+pixi.lock
+
+
