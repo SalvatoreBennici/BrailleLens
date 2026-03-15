@@ -1,0 +1,32 @@
+seed: 42
+
+paths:
+  raw: "datasets/raw"
+  out: "datasets"
+
+datasets:
+  angelina:
+    name: "Angelina"
+    prefix: "ANG_"
+  natural_scene:
+    name: "NaturalScene"
+    prefix: "NS_"
+  dsbi:
+    name: "DSBI"
+    prefix: "DSBI_"
+  merged:
+    name: "MergedDataset"
+    suffix: "-YOLO"
+
+# Detector dataset pipeline
+detector:
+  splits: ["train", "val", "test"]
+  val_split_ratio: 0.20
+  ns_oversample_ratio: 0.20
+
+# Classifier crops pipeline
+classifier:
+  crops_dir: "datasets/MergedDataset-Crops"
+  target_shape: [64, 48]   # [height, width] in pixels
+  margin_pct: 0.15
+  misc_crops: 5000
