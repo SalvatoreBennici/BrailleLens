@@ -1,0 +1,4 @@
+Overall,Overall,Overall,Overall,Angelina,Angelina,Angelina,Angelina,NaturalScene,NaturalScene,NaturalScene,NaturalScene,DSBI,DSBI,DSBI,DSBI,Metadata
+Recall,Precision,F1_Score,Strict_Acc,Recall,Precision,F1_Score,Strict_Acc,Recall,Precision,F1_Score,Strict_Acc,Recall,Precision,F1_Score,Strict_Acc,split
+0.9826,0.9558,0.969,0.9398,0.9975,0.9735,0.9854,0.9711,0.9071,0.8514,0.8784,0.7831,0.9239,0.8933,0.9084,0.8321,val
+0.9546,0.911,0.9323,0.8732,0.8684,0.8613,0.8649,0.7619,0.9009,0.8274,0.8626,0.7584,0.9875,0.9306,0.9582,0.9198,test
