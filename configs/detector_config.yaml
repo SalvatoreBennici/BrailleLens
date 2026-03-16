@@ -1,0 +1,37 @@
+model:
+  weights: "yolo26n.pt"
+  imgsz: 800
+  single_cls: true
+
+# Hardware & Reproducibility
+hardware:
+  device: 0
+  seed: 42
+
+# Training Hyperparameters (Overrides only)
+training:
+  epochs: 150
+  batch: 8
+  patience: 40
+  optimizer: "MuSGD"
+  warmup_epochs: 5
+  close_mosaic: 20
+  max_det: 1500
+  exist_ok: true
+  verbose: false
+
+# Loss Weights (Overrides only)
+loss:
+  box: 10.0
+  cls: 0.1
+
+# Augmentations (Overrides only)
+augmentations:
+  erasing: 0.0
+  angle: 1.0
+
+# Project Paths
+paths:
+  project_dir: "runs/detect"
+  experiment_name: "yolo26n_singlecls"
+  merged_yaml: "datasets/MergedDataset-YOLO/data.yaml"
