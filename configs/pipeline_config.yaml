@@ -1,0 +1,22 @@
+paths:
+  merged_yaml: "datasets/MergedDataset-YOLO/data.yaml"
+  output_dir: "runs/pipeline"
+  experiment_name: "pipeline_v1"
+
+models:
+  detector_weights: "runs/detect/yolo26n_singlecls/weights/best.pt"
+  classifier_weights: "runs/classifier/BrailleDotNet/BrailleDotNet.pth"
+
+inference:
+  device: "cuda"  # or "cpu"
+  detector_conf_threshold: 0.1
+  detector_iou_threshold: 0.45
+  classifier_logit_threshold: 0.0
+  batch_size: 64
+
+geometry:
+  target_shape: [64, 48] # [H, W]
+  margin_pct: 0.15
+
+translation:
+  language_map_json: "configs/braille_maps/it.json"
