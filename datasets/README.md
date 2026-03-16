@@ -11,4 +11,4 @@ This project uses Pixi for environment and dependency management.
 To download and extract the dataset into the current directory, run:
 
 ```bash
-pixi run python download_datasets.py https://drive.google.com/file/d/1-OQb2hs7wXwjGMQ11vDUsQ7NMPIT4vlV/view?usp=sharing
+pixi run python download_datasets.py
