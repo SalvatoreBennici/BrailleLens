@@ -28,19 +28,3 @@ fiftyone = ">=1.4.1,<2"
 strawberry-graphql = "<0.209.0"
 pyprojroot = ">=0.3.0,<0.4"
 gdown = ">=5.2.1,<6"
-
-[tasks]
-make_dataset = "python src/data/make_dataset.py"
-make_crops = "python src/data/extract_crops.py"
-make_angelina_augmented = "python src/data/augment_offline.py"
-
-# Detector
-train_detector = "python src/detector/train.py"
-val_detector = "python src/detector/validate.py"
-
-# Classifier
-train_classifier = "python src/classifier/train.py"
-val_classifier = "python src/classifier/validate.py"
-
-# Pipeline
-run_pipeline = "python src/pipeline/inference.py"
