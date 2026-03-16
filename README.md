@@ -15,7 +15,7 @@ The system relies on a strictly decoupled two-stage architecture:
 
 ## Getting Started
 
-[Pixi](https://prefix.dev/) is highly recommended for deterministic package management, though standard pip is fully supported.
+[Pixi](https://prefix.dev/tools/pixi) is highly recommended for deterministic package management, though standard pip is fully supported.
 
 ### 1. Installation
 
