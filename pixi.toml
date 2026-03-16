@@ -29,3 +29,6 @@ strawberry-graphql = "<0.209.0"
 pyprojroot = ">=0.3.0,<0.4"
 gdown = ">=5.2.1,<6"
 pip = ">=26.0.1,<27"
+
+[tasks]
+make_requirements = "python -m pip freeze > requirements.txt"
