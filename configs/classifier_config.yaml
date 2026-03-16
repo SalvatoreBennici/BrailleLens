@@ -1,0 +1,26 @@
+paths:
+  crops_dir: "datasets/MergedDataset-Crops"
+  project_dir: "runs/classifier"
+  experiment_name: "BrailleDotNet"
+  best_model_name: "BrailleDotNet.pth"
+
+data_processing:
+  target_shape: [64, 48]
+  margin_pct: 0.15
+  num_workers: 8
+  mean: [0.5]
+  std: [0.5]
+
+training:
+  epochs: 35
+  batch_size: 512
+  learning_rate: 0.005
+  weight_decay: 1e-4
+  patience: 15
+  seed: 42
+  num_workers: 4
+  threshold: 0.0  # Threshold on raw logits (0.0 == 50% probability)
+
+model:
+  in_channels: 1
+  num_classes: 6
